@@ -1,0 +1,10 @@
+@import "../../index.scss";
+@import "../../_mixin.scss";
+@import "../../_variables.scss";
+
+.learnBtn {
+  @include btn-base;
+  border-radius: $radius-btn;
+  border: $border-primary;
+  background: $color-bg-blue;
+}

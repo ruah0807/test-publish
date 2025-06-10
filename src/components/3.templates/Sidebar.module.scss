@@ -1,0 +1,29 @@
+@import "../../index.scss";
+
+.menuName {
+  @include flex-row;
+  justify-content: space-between;
+  background: $color-bg-white;
+  height: 60px;
+  padding: 0 1rem;
+  gap: 1rem;
+  .hamburgerIcon {
+    cursor: pointer;
+  }
+}
+.menuContainer {
+  @include flex-column;
+  list-style: none;
+  justify-content: start;
+  padding: 0;
+}
+
+.menuItem {
+  @include flex-row;
+  padding: 1rem;
+  background: $color-bg-white;
+  gap: 1rem;
+  &:hover {
+    background: $color-bg-blue;
+  }
+}

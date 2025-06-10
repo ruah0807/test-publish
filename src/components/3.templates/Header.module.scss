@@ -1,0 +1,18 @@
+@import "./../../index.scss";
+
+.nameContainer {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  .name {
+    color: $color-text-main;
+    font-size: $font-size-base;
+    font-weight: 700;
+  }
+  .name_tag {
+    color: $color-text-main;
+    font-size: $font-size-base;
+    font-weight: 400;
+  }
+}

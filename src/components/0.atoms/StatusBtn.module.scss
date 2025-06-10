@@ -1,0 +1,15 @@
+@import "../../index.scss";
+@import "../../_mixin.scss";
+@import "../../_variables.scss";
+
+.statusBtn {
+  @include btn-base;
+  border: $border-base;
+  background: $color-bg-white;
+  gap: 5px;
+
+  .statusBtnContainer {
+    @include flex-row;
+    gap: 0.4rem;
+  }
+}

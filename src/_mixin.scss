@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin btn-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-btn;
+  font-size: 0.9rem;
+  width: 7.5rem;
+  height: 3rem;
+}
