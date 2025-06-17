@@ -9,7 +9,7 @@ import educationIconActive from "../../../public/images/education_active.svg";
 import hamburgerIcon from "../../../public/images/hamburger.png";
 
 const Sidebar = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(false);
 
   return (
     <>
@@ -23,23 +23,23 @@ const Sidebar = () => {
       </div>
       <nav>
         <ul className={styles.menuContainer}>
-          <li onClick={() => setActive(0)} className={styles.menuItem}>
+          {/* 대시보드: /dashboard */}
+          <li className={styles.menuItem}>
             <img
-              src={active === 0 ? dashboardIconActive : dashboardIcon}
+              src={active ? dashboardIconActive : dashboardIcon}
               alt="dashboardIcon"
             />
             <div className={styles.menuText}>대시보드</div>
           </li>
-          <li className={styles.menuItem} onClick={() => setActive(1)}>
-            <img
-              src={active === 1 ? chatIconActive : chatIcon}
-              alt="chatIcon"
-            />
+          {/* AI Q&A Chat: /chat */}
+          <li className={styles.menuItem}>
+            <img src={active ? chatIconActive : chatIcon} alt="chatIcon" />
             <div className={styles.menuText}>AI Q&A Chat</div>
           </li>
-          <li className={styles.menuItem} onClick={() => setActive(2)}>
+          {/* 교육: /education */}
+          <li className={styles.menuItem}>
             <img
-              src={active === 2 ? educationIconActive : educationIcon}
+              src={active ? educationIconActive : educationIcon}
               alt="educationIcon"
             />
             <div className={styles.menuText}>교육</div>
