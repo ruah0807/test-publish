@@ -9,7 +9,7 @@ import educationIconActive from "../../../public/images/education_active.svg";
 import hamburgerIcon from "../../../public/images/hamburger.png";
 
 const Sidebar = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false); // 버튼 비활성 상태
 
   return (
     <>
