@@ -26,3 +26,9 @@
   width: 7.5rem;
   height: 3rem;
 }
+
+@mixin respond($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}

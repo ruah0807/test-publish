@@ -9,6 +9,7 @@
   gap: 1rem;
   .hamburgerIcon {
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
 }
 .menuContainer {
@@ -23,7 +24,14 @@
   padding: 1rem;
   background: $color-bg-white;
   gap: 1rem;
+  cursor: pointer;
   &:hover {
     background: $color-bg-blue;
+    transition: background 0.3s ease;
+  }
+}
+.menuText {
+  @include respond($mobile767) {
+    display: none;
   }
 }

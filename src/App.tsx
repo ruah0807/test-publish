@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.sidebar}>
+        <aside className={styles.sidebar}>
           <Sidebar />
-        </div>
+        </aside>
         <div className={styles.wrapper}>
           <header className={styles.header}>
             <Header />

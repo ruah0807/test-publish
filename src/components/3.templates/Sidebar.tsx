@@ -7,23 +7,29 @@ const Sidebar = () => {
   return (
     <>
       <div className={styles.menuName}>
-        <h2>LOGO</h2>
-        <img src={hamburgerIcon} alt="hamburgerIcon" />
+        <h2 className={styles.menuText}>LOGO</h2>
+        <img
+          src={hamburgerIcon}
+          alt="hamburgerIcon"
+          className={styles.hamburgerIcon}
+        />
       </div>
-      <ul className={styles.menuContainer}>
-        <li className={styles.menuItem}>
-          <img src={dashboardIcon} alt="dashboardIcon" />
-          <div>대시보드</div>
-        </li>
-        <li className={styles.menuItem}>
-          <img src={chatIcon} alt="chatIcon" />
-          <div>AI Q&A Chat</div>
-        </li>
-        <li className={styles.menuItem}>
-          <img src={educationIcon} alt="educationIcon" />
-          <div>교육</div>
-        </li>
-      </ul>
+      <nav>
+        <ul className={styles.menuContainer}>
+          <li className={styles.menuItem}>
+            <img src={dashboardIcon} alt="dashboardIcon" />
+            <div className={styles.menuText}>대시보드</div>
+          </li>
+          <li className={styles.menuItem}>
+            <img src={chatIcon} alt="chatIcon" />
+            <div className={styles.menuText}>AI Q&A Chat</div>
+          </li>
+          <li className={styles.menuItem}>
+            <img src={educationIcon} alt="educationIcon" />
+            <div className={styles.menuText}>교육</div>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 };
